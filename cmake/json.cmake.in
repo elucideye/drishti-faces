@@ -1,0 +1,6 @@
+{
+    "test_eye_image": "@test_eye_image@",
+    "test_eye_model": "@test_eye_model@",
+    "test_eye_model_private": "@test_eye_model_private@",
+    "test_face_image": "@test_face_image@"
+}
