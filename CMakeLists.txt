@@ -22,6 +22,10 @@ set(test_face_image "lena512color.png")
 # Use variables:
 # * PROJECT_NAME
 # * FACTORY_NAME
+# * test_eye_image
+# * test_eye_model
+# * test_eye_model_private
+# * test_face_image
 configure_package_config_file(
     "cmake/Config.cmake.in"
     "${project_config}"
