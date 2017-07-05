@@ -11,6 +11,14 @@ set(generated_index "${generated_dir}/${INDEX_NAME}")
 
 include(CMakePackageConfigHelpers)
 
+# TODO: Once face data is added we will probably need a GLOB here
+
+# Initial list of unit test eye + face images
+set(test_eye_image "2318-eye.png")
+set(test_eye_model "2318-eye.json")
+set(test_eye_model_private "2318-eye_private.json")
+set(test_face_image "lena512color.png")
+
 # Use variables:
 # * PROJECT_NAME
 # * FACTORY_NAME
@@ -22,14 +30,6 @@ configure_package_config_file(
 )
 
 install(FILES "${project_config}" DESTINATION "${config_install_dir}")
-
-# TODO: Once face data is added we will probably need a GLOB here
-
-# Initial list of unit test eye + face images
-set(test_eye_image "2318-eye.png")
-set(test_eye_model "2318-eye.json")
-set(test_eye_model_private "2318-eye_private.json")
-set(test_face_image "lena512color.png")
 
 # Build a top level test file index (similar to drishti-assets)
 # We may want to export variables for these images as well.
